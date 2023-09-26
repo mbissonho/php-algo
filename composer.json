@@ -1,0 +1,22 @@
+{
+    "name": "mbissonho/php-algo",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Mbissonho\\PhpAlgo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mbissonho\\PhpAlgo\\Tests": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mbissonho"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    }
+}
