@@ -7,12 +7,19 @@ use PHPUnit\Framework\TestCase;
 
 class FibonacciTest extends TestCase
 {
-
     public function testLastNumberShouldBeProvidedAsParameter()
     {
         $this->expectException(\InvalidArgumentException::class);
 
         (new Fibonacci())->execute([]);
+    }
+
+    public function testValidLastNumberShouldBeProvidedAsParameter()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+
+        (new Fibonacci())->execute(['last_number' => 'non integer value']);
+        (new Fibonacci())->execute(['last_number' => '13']);
     }
 
     public function testFibonacciSequence()

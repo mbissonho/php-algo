@@ -8,7 +8,7 @@ class Fibonacci implements AlgorithmInterface
 
     public function execute(array $args)
     {
-        if(!isset($args['last_number'])) {
+        if(!isset($args['last_number']) || !is_integer($args['last_number'])) {
             throw new \InvalidArgumentException("Missing 'last_number' argument");
         }
 
