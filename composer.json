@@ -16,6 +16,9 @@
             "name": "mbissonho"
         }
     ],
+    "require": {
+        "php": "8.*"
+    },
     "require-dev": {
         "phpunit/phpunit": "^10.3"
     }
